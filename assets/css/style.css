@@ -28,3 +28,12 @@
 .categories h2{
     margin-bottom: 20px;
 }
+
+/* latest-trending */
+.latest-trending{
+    margin: 20px 0 0 20px;
+
+}
+.latest-question .card{
+    margin-bottom: 20px;
+}

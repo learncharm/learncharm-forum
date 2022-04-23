@@ -1,3 +1,4 @@
+/* navbar-section */
 .nav-profile{
     position: relative;
     top: 10px;
@@ -13,4 +14,17 @@
     margin-left: 20px;
     position: relative;
     bottom: 10px;
+}
+
+/* quote-section */
+.quote {
+    margin: 20px 0 0 20px;
+}
+
+/* categories section */
+.categories{
+    margin: 20px 0 0 20px;
+}
+.categories h2{
+    margin-bottom: 20px;
 }

@@ -12,9 +12,11 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar p-2  navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar   navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Learncharm - Forum</a>
+  <a class="navbar-brand" href="#">
+      <img src="./assets/img/logo/logo.png" alt=""  class="d-inline-block align-text-top">
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -43,11 +45,11 @@
         </li>
       </ul>
       <div class="d-flex nav-profile">
-        <p class="me-2">Krupesh</p>
-        <img src="https://cdn.discordapp.com/attachments/852063239277903892/966598569270312990/Krupesh_Vithlani_2_1.jpg" alt="" class="nav-profile-img" width="30" height="30">
+        <!-- <p class="me-2">Krupesh</p>
+        <img src="https://cdn.discordapp.com/attachments/852063239277903892/966598569270312990/Krupesh_Vithlani_2_1.jpg" alt="" class="nav-profile-img" width="32" height="32"> -->
 
-        <a href="#" class="btn btn-primary">SIgn Up</a>
-        <a href="#" class="btn btn-outline-primary">Log In</a>
+        <a href="#" class="btn btn-full">SIgn Up</a>
+        <a href="#" class="btn btn-border">Log In</a>
 </div>
     </div>
   </div>

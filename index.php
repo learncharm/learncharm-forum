@@ -15,30 +15,32 @@ $name = "Krupesh"
 <section class="categories">
     <h2>Categories</h2>
 
-    <div class="container">
 
-        <div class="row">
+    <div class="container">
+    <div class="row">
 
         <?php
 
-        $selsqe = "select * from forum_category";
-        $result = mysqli_query($con,$selsqe);
+$selsqe = "select * from forum_category";
+$result = mysqli_query($con,$selsqe);
 
-        while($row = mysqli_fetch_assoc($result))
-        {
-            $catname = $row['category_name'];
-            $catdesc = $row['category_desc'];
-
-            echo '
+while($row = mysqli_fetch_assoc($result))
+{
+    $catname = $row['category_name'];
+    $subcat = $row['category_sub'];
+    $catdesc = $row['category_desc'];
+    ?>
+            
             <div class="card col-sm-3 mx-3 mb-3" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">'.$catname.'</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Web Development</h6>
-                <p class="card-text">'.substr($catdesc,0,70).'...</p>
+                <h5 class="card-title"><?= $catname?></h5>
+                <h6 class="card-subtitle mb-2 text-muted"><?= $subcat?></h6>
+                <p class="card-text"> <?php echo substr($catdesc,0,70)  ?>...</p>
                 <a href="#" class="card-link btn btn-primary">Visit Category</a>
             </div>
         </div>
-            ';
+
+            <?php
         }
         ?>
             <!-- card 1 -->
